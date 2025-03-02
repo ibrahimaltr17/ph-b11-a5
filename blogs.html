@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&family=Sora:wght@100..800&display=swap');
+        .poppins {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    </style>
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/x-icon" href="./image/logo.png">
+    <title>Devboard-Blogs</title>
+</head>
+<body class="poppins px-5 md:px-10 py-6 bg-[#F4F7FF]">
+    <section class="space-y-5 max-w-[1536px] mx-auto">
+        <!-- Header Start -->
+        <header class="">
+    
+            <!-- Navbar Start -->
+            <nav class=" rounded-2xl px-4 py-2 bg-white flex justify-between">
+                <div class="logo-and-name flex items-center gap-2">
+                    <div class="w-8">
+                        <img src="image/logo.png" alt="">
+                    </div>
+                    <div class="hidden md:block">
+                        <h3 class="text-2xl">Dev<span class="font-bold">Board</span></h3>
+                    </div>
+                </div>
+                <button id="back-desk-btn" class="btn btn-active btn-primary rounded-lg border-none text-sm font-normal text-white bg-[#3752FD]">Back to Desk</button>
+                            </div>
+            </nav>
+            <!-- Navbar End -->
+
+        </header>
+        <!-- Header End -->
+
+        <!-- Main Section Start -->
+        <main class="space-y-5">
+            <h2 class="text-2xl font-extrabold my-5 text-center">Blogs</h2>
+            <!-- Question 1 -->
+            <div class="bg-white rounded-lg">
+                <div class=" p-3 ">
+                    <h4 class="text-xl font-bold">Question-1: What are the different ways to select an element in the DOM?</h4>
+                </div>
+                <hr class="border-t border-dashed border-gray-300">
+                <div class="p-3">
+                    <p class="text-gray-500">We can select an element by getElementById, getElementsByTagName, getElementsByClassName, querySelectorAll</p>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="bg-white rounded-lg">
+                <div class=" p-3 ">
+                    <h4 class="text-xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h4>
+                </div>
+                <hr class="border-t border-dashed border-gray-300">
+                <div class="p-3">
+                    <p class="text-gray-500">innerHTML is use to apply HTML by DOM. innerText is use to apply the text on any element. textContent is mainly use to apply on whole content of an element</p>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="bg-white rounded-lg">
+                <div class=" p-3 ">
+                    <h4 class="text-xl font-bold">Question-3: What is event delegation in the DOM?</h4>
+                </div>
+                <hr class="border-t border-dashed border-gray-300">
+                <div class="p-3">
+                    <p class="text-gray-500">Event delegation is a methode where we can handle child element through their parent element.</p>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="bg-white rounded-lg">
+                <div class=" p-3 ">
+                    <h4 class="text-xl font-bold">Question-4: What is event bubbling in the DOM?</h4>
+                </div>
+                <hr class="border-t border-dashed border-gray-300">
+                <div class="p-3">
+                    <p class="text-gray-500">I think bubble in JS is kind of a model where we handle various element using event delegation.</p>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="bg-white rounded-lg">
+                <div class=" p-3 ">
+                    <h4 class="text-xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h4>
+                </div>
+                <hr class="border-t border-dashed border-gray-300">
+                <div class="p-3">
+                    <p class="text-gray-500">I use createElement() for create an element. We can add element using .add() or .append(). To remove we can use .remove() </p>
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="./js-files/btnToPage.js"></script>
+    <script src="./js-files/backToDesk.js"></script>
+</body>
+</html>
